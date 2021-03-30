@@ -7,8 +7,6 @@ import Footer from '../components/Footer';
 const Stars = () => {
     return (
         <>
-            <Navbar />
-            <Sidebar />
             <StarsSection />
             <Footer />
         </>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button } from '../ButtonElement.js';
+import { ButtonR } from '../ButtonElement.js';
+import {link as linkR} from 'react-router-dom';
 import {
   InfoContainer,
   InfoWrapper,
@@ -29,7 +30,8 @@ const InfoSection = ({
   primary,
   darkText,
   dark,
-  dark2
+  dark2,
+  path
 }) => {
   console.log(primary);
   return (
@@ -43,19 +45,11 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button
-                    to='home'
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
+                  <ButtonR
+                    to={path}
                   >
                     {buttonLabel}
-                  </Button>
+                  </ButtonR>
                 </BtnWrap>
               </TextWrapper>
             </Column1>

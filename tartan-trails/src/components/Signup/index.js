@@ -9,9 +9,9 @@ import {
   FormLabel,
   FormInput,
   FormButton,
-} from './SigninElements';
+} from './SignupElements';
 
-export const SignIn = () => {
+export const Signup = () => {
   return (
     <>
       <Container>
@@ -19,9 +19,11 @@ export const SignIn = () => {
           <Icon to='/'>Tartan-Trails</Icon>
           <FormContent>
             <Form action='#'>
-              <FormH1>Sign in to your account</FormH1>
+              <FormH1>Sign up for a new account</FormH1>
               <FormLabel htmlFor='for'>Username</FormLabel>
               <FormInput type='text' required />
+              <FormLabel htmlFor='for'>Password</FormLabel>
+              <FormInput type='password' required />
               <FormLabel htmlFor='for'>Password</FormLabel>
               <FormInput type='password' required />
               <FormButton type='submit'>Continue</FormButton>

@@ -5,6 +5,7 @@ import Icon4 from '../../images/pic4.jpg';
 
 
 export const homeObjOne = {
+  path: '/',
   id: 'about',
   lightBg: false,
   lightText: true,
@@ -23,6 +24,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
+  path: '/gnomes',
   id: 'gnome',
   lightBg: true,
   lightText: false,
@@ -41,6 +43,7 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
+  path: '/signup',
   id: 'signup',
   lightBg: true,
   lightText: false,
