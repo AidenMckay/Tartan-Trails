@@ -1,19 +1,26 @@
-use tartanTrails;
+use ;tartanTrails;
 db.dropDatabase();
 
 db.gnomes.insertMany([
     {
-        name: "Aiden House",
+        name: "Gertrude",
         coords: {
-            lat: 57.263474000000005,
-            lng: -2.373995
+            lat: 57.275562, 
+            lng: -2.455371
         }
     },
     {
-        name: "Kintore",
+        name: "Gnome2",
         coords: {
-            lat: 57.2328724,
-            lng: -2.3659651
+            lat: 57.2764644823521, 
+            lng: -2.417051289953396
+        }
+    },
+    {
+        name: "gnome3",
+        coords: {
+            lat: 57.27444464777107,
+            lng: -2.3822812075901445
         }
     }
 ]);
