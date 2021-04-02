@@ -26,7 +26,7 @@ function HeroSection() {
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Tartan Trails</HeroH1>
+        <HeroH1>tartan trails</HeroH1>
         <HeroP>
           Sign up today and explore the outdoors!
         </HeroP>
@@ -43,7 +43,7 @@ function HeroSection() {
             onMouseEnter={onHover}
             onMouseLeave={onHover}
           >
-            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
+            Get started {hover ? '<' : '>'}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

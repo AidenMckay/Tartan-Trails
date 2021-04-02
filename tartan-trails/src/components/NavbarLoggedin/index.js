@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo onClick={toggleHome} to='/'>
-              Tartan-Trails
+              tartan trails
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -48,11 +48,11 @@ const Navbar = ({ toggle }) => {
             <div className="button-container">
               <NavItem>
                 <NavLinkR to="/signup">
-                  Sign Up
+                  sign up
                 </NavLinkR>
               </NavItem>
               <NavBtn>
-                <NavBtnLink to='/Signin'>Sign In</NavBtnLink>
+                <NavBtnLink to='/Signin'>Sign in</NavBtnLink>
               </NavBtn>
             </div>
           </NavbarContainer>

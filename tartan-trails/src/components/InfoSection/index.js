@@ -39,10 +39,12 @@ const InfoSection = ({
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}>{headline}</Heading>
+                <Heading lightText={lightText}>{headline.toLowerCase()}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <ButtonR
+                    primary={primary}
+                    dark={darkText}
                     to={path}
                   >
                     {buttonLabel}

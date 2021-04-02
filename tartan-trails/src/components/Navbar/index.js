@@ -39,7 +39,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo onClick={toggleHome} to='/'>
-              Tartan-Trails
+              tartan trails
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -54,7 +54,7 @@ const Navbar = ({ toggle }) => {
                   exact='true'
                   offset={-80}
                 >
-                  About
+                  about
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -66,7 +66,7 @@ const Navbar = ({ toggle }) => {
                   exact='true'
                   offset={-80}
                 >
-                  Gnomes
+                  gnomes
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -78,7 +78,7 @@ const Navbar = ({ toggle }) => {
                   exact='true'
                   offset={-80}
                 >
-                  Services
+                  services
                 </NavLinks>
               </NavItem>
               <NavItem>
@@ -90,12 +90,12 @@ const Navbar = ({ toggle }) => {
                   exact='true'
                   offset={-80}
                 >
-                  Sign Up
+                  sign up
                 </NavLinks>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to='/Signin'>Sign In</NavBtnLink>
+              <NavBtnLink to='/Signin'>Sign in</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

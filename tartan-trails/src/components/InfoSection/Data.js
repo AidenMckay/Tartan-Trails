@@ -15,17 +15,17 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'About us',
-  headline: 'Gnome-Trails, Regular-Trails & Night life.',
+  topLine: 'about us.',
+  headline: 'gnome trails, regular trails, & Night clubs.',
   description:
-    'Tartan-Trails is a web app that enables families and individuals to go out and explore the outdoors get some fresh air and good exercise',
+    'tartan trails is a web app that enables families and individuals to go out and explore the outdoors get some fresh air and good exercise.',
   buttonLabel: 'Click to get started',
   imgStart: false,
   img: Icon1,
   alt: 'forrest',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true
 };
 
 export const homeObjTwo = {
@@ -34,17 +34,17 @@ export const homeObjTwo = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'Gertrude the Gnome',
-  headline: 'Find the gnome to earn an achievement',
+  topLine: 'gertrude the gnome.',
+  headline: 'Find the gnome to earn an achievement.',
   description:
     'The gnomes have been placed in various woods/locations in the Inverurie area, can you find them all?',
   buttonLabel: 'Click to learn more',
   imgStart: true,
   img: Icon2,
-  alt: 'Gnome',
+  alt: 'gnome',
   dark: false,
   primary: false,
-  darkText: true
+  darkText: false
 };
 
 export const homeObjThree = {
@@ -53,8 +53,8 @@ export const homeObjThree = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'Join today',
-  headline: 'Creating an account is extremely easy',
+  topLine: 'join today.',
+  headline: 'Creating an account is extremely easy.',
   description:
     "Get everything set up and ready in under 5 minutes.",
   buttonLabel: 'Start Now',
@@ -63,7 +63,7 @@ export const homeObjThree = {
   alt: 'northern lights',
   dark: false,
   primary: false,
-  darkText: true
+  darkText: false
 };
 
 export const trailObjOne = {
@@ -72,17 +72,17 @@ export const trailObjOne = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'East Aquhorthies Stone Circle',
-  headline: 'Located near Inverurie in north-east Scotland',
+  topLine: 'east aquhorthies stone circle.',
+  headline: 'Located near Inverurie in North-East Scotland.',
   description:
-    "A monument type only found in north-east Scotland. It has a large stone set on its side and flanked by two upright stones, usually on the south or south-west part of the circle.",
-  buttonLabel: 'DIRECTIONS 📍',
+    "A monument type only found in North-East Scotland. It has a large stone set on its side and flanked by two upright stones, usually on the south or south-west part of the circle.",
+  buttonLabel: 'Directions 📍',
   imgStart: false,
   img: Icon7,
   alt: 'stone circle',
   dark: false,
   primary: false,
-  darkText: true
+  darkText: false
 };
 
 export const trailObjTwo = {
@@ -91,17 +91,17 @@ export const trailObjTwo = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Berryhill',
-  headline: 'Behind Archaeolink, Oyne',
+  topLine: 'berryhill.',
+  headline: 'Behind Archaeolink, Oyne.',
   description:
     "Berryhill is a hidden gem with ruins and several different types of trees along the walk, once at the top the views are spectacular!",
-  buttonLabel: 'DIRECTIONS 📍',
+  buttonLabel: 'Directions 📍',
   imgStart: true,
   img: Icon8,
   alt: 'berryhill',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true
 };
 
 export const trailObjThree = {
@@ -110,17 +110,17 @@ export const trailObjThree = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'Bishops Palace',
-  headline: 'Fetternear Bishops Palace, Kemnay',
+  topLine: 'bishops palace.',
+  headline: 'Fetternear Bishops Palace, Kemnay.',
   description:
     "An archaeological site of what was one of the palaces of the medieval bishops of Aberdeen.",
-  buttonLabel: 'DIRECTIONS 📍',
+  buttonLabel: 'Directions 📍',
   imgStart: false,
   img: Icon9,
   alt: 'bishops palace',
   dark: false,
   primary: false,
-  darkText: true
+  darkText: false
 };
 
 export const trailObjFour = {
@@ -129,17 +129,17 @@ export const trailObjFour = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'The river Don',
-  headline: 'one of the two rivers flowing through inverurie',
+  topLine: 'the river don.',
+  headline: 'one of the two rivers flowing through Inverurie.',
   description:
     "Walk down to the riverbank for lovely scenery and wildllife.",
-  buttonLabel: 'DIRECTIONS 📍',
+  buttonLabel: 'Directions 📍',
   imgStart: true,
   img: Icon10,
   alt: 'don',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true
 };
 
 export const trailObjFive = {
@@ -148,15 +148,15 @@ export const trailObjFive = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'Bass of Inverurie',
-  headline: 'Southside of Inverurie, Keithhall road',
+  topLine: 'bass of inverurie.',
+  headline: 'Southside of Inverurie, Keithhall Road.',
   description:
     "The monument comprises a 12th-century motte-and-bailey castle known as the Bass of Inverurie and Little Bass, now visible as substantial earthworks.",
-  buttonLabel: 'DIRECTIONS 📍',
+  buttonLabel: 'Directions 📍',
   imgStart: false,
   img: Icon11,
   alt: 'bass',
   dark: false,
   primary: false,
-  darkText: true
+  darkText: false
 };

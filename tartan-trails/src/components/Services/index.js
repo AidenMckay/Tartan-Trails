@@ -15,27 +15,27 @@ import {
 const Services = () => {
   return (
     <ServicesContainer id='services'>
-      <ServicesH1>Services</ServicesH1>
+      <ServicesH1>services</ServicesH1>
       <ServicesWrapper>
         <ServicesCard to='/Trails'>
           <ServicesIcon src={Icon6} />
-          <ServicesH2>Trails</ServicesH2>
+          <ServicesH2>trails</ServicesH2>
           <ServicesP>
-            explore the outdoors
+            explore the outdoors.
           </ServicesP>
         </ServicesCard>
         <ServicesCard to='/Gnomes'>
           <ServicesIcon src={Icon5} />
-          <ServicesH2>Gnome Discovery</ServicesH2>
+          <ServicesH2>gnome discovery</ServicesH2>
           <ServicesP>
-            Find the gnomes if you can!
+            find the gnomes if you can!
           </ServicesP>
         </ServicesCard>
         <ServicesCard to='/Stars'>
           <ServicesIcon src={Icon3} />
-          <ServicesH2>Night Sights</ServicesH2>
+          <ServicesH2>night sights</ServicesH2>
           <ServicesP>
-            What stars are out tonight?
+            what stars are out tonight?
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>
