@@ -1,6 +1,5 @@
 import React from 'react';
 import { ButtonR } from '../ButtonElement.js';
-import {link as linkR} from 'react-router-dom';
 import {
   InfoContainer,
   InfoWrapper,
@@ -29,8 +28,6 @@ const InfoSection = ({
   id,
   primary,
   darkText,
-  dark,
-  dark2,
   path
 }) => {
   console.log(primary);

@@ -5,10 +5,8 @@ import Stars from './pages/Stars';
 import Gnomes from './pages/Gnomes';
 import SignIn from './pages/Signin';
 import Signup from './pages/Signup';
+import Trails from './pages/Trails';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Sidebar from './components/Sidebar';
-
 function App() {
   const [isOpen, setIsOpen] = useState(false)
   const toggle = () => {
@@ -24,6 +22,28 @@ function App() {
           <Route path="/gnomes" component={Gnomes} />
           <Route path="/signin" component={SignIn} />
           <Route path="/signup" component={Signup} />
+          <Route path="/Trails" component={Trails} />
+          <Route path='/directionStoneCircle' component={() => { 
+            window.location.href = 'https://www.google.com/maps/dir//57.2796219,-2.4455908/@57.2801712,-2.5124769,12z/data=!3m1!4b1'
+            return null;
+          }}/>
+          <Route path='/berryhill' component={() => { 
+            window.location.href = 'https://www.google.com/maps/dir//57.3209949,-2.5507845/@57.3209514,-2.5503983,17z/data=!4m2!4m1!3e0'
+            return null;
+          }}/>
+          <Route path='/bishop' component={() => { 
+            window.location.href = 'https://www.google.com/maps/dir//57.2436465,-2.4602795/@57.2433583,-2.4596352,17.75z/data=!4m2!4m1!3e0'
+            return null;
+          }}/>
+          <Route path='/don' component={() => { 
+            window.location.href = 'https://www.google.com/maps/dir//57.2754432,-2.3824722/@57.2751851,-2.3841566,17z/data=!4m2!4m1!3e0'
+            return null;
+          }}/>
+          <Route path='/bass' component={() => { 
+            window.location.href = 'https://www.google.com/maps/dir//57.2753682,-2.3665627/@57.2746736,-2.3668523,18z/data=!4m2!4m1!3e0'
+            return null;
+          }}/>
+
         </Switch>
       </>
     </Router>
