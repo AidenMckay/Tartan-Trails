@@ -16,7 +16,7 @@ export const homeObjOne = {
   lightText: true,
   lightTextDesc: true,
   topLine: 'about us.',
-  headline: 'gnome trails, regular trails, & Night clubs.',
+  headline: 'Gnome Discovery, Trails & Night sights.',
   description:
     'tartan trails is a web app that enables families and individuals to go out and explore the outdoors get some fresh air and good exercise.',
   buttonLabel: 'Click to get started',
@@ -25,7 +25,8 @@ export const homeObjOne = {
   alt: 'forrest',
   dark: true,
   primary: true,
-  darkText: true
+  darkText: true,
+  darkSubtitle: false
 };
 
 export const homeObjTwo = {
@@ -34,17 +35,17 @@ export const homeObjTwo = {
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: 'gertrude the gnome.',
-  headline: 'Find the gnome to earn an achievement.',
-  description:
-    'The gnomes have been placed in various woods/locations in the Inverurie area, can you find them all?',
+  topLine: 'gertrude, Scry and Konrad.',
+  headline: 'Find these gnomes and add them to your map',
+  description:'The gnomes have been placed in various woods/locations in the Inverurie area, can you find them all?',
   buttonLabel: 'Click to learn more',
   imgStart: true,
   img: Icon2,
   alt: 'gnome',
   dark: false,
   primary: false,
-  darkText: false
+  darkText: false,
+  darkSubtitle: true
 };
 
 export const homeObjThree = {
@@ -63,7 +64,8 @@ export const homeObjThree = {
   alt: 'northern lights',
   dark: false,
   primary: false,
-  darkText: false
+  darkText: false,
+  darkSubtitle: true
 };
 
 export const trailObjOne = {
@@ -82,7 +84,8 @@ export const trailObjOne = {
   alt: 'stone circle',
   dark: false,
   primary: false,
-  darkText: false
+  darkText: false,
+  darkSubtitle: true
 };
 
 export const trailObjTwo = {
@@ -101,7 +104,8 @@ export const trailObjTwo = {
   alt: 'berryhill',
   dark: true,
   primary: true,
-  darkText: true
+  darkText: true,
+  darkSubtitle: false
 };
 
 export const trailObjThree = {
@@ -120,7 +124,8 @@ export const trailObjThree = {
   alt: 'bishops palace',
   dark: false,
   primary: false,
-  darkText: false
+  darkText: false,
+  darkSubtitle: true
 };
 
 export const trailObjFour = {
@@ -139,7 +144,8 @@ export const trailObjFour = {
   alt: 'don',
   dark: true,
   primary: true,
-  darkText: true
+  darkText: true,
+  darkSubtitle: false
 };
 
 export const trailObjFive = {
@@ -158,5 +164,6 @@ export const trailObjFive = {
   alt: 'bass',
   dark: false,
   primary: false,
-  darkText: false
+  darkText: false,
+  darkSubtitle: true
 };

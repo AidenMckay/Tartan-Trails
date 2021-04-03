@@ -3,7 +3,8 @@ import { fetchGnomes } from '../../services/GnomeService'
 import { getLocation } from '../../services/LocationService'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { MapWrapper } from './GnomesElements';
-import gnomeIcon from '../../images/gnotagnoblin.png'
+import gnomeIcon from '../../images/gnotagnoblin.png';
+import blackGnomeIcon from '../../images/gnotagnoblinbackout.png';
 import L from 'leaflet';
 
 export const Gnomes = () => {
@@ -11,6 +12,7 @@ export const Gnomes = () => {
     const [userLocation, setUserLocation] = useState(null)
     
     const gnomeMarker = L.icon({ iconUrl: gnomeIcon, iconSize: new L.Point(60, 75) })
+    const blackGnomeMarker = L.icon({ iconUrl: blackGnomeIcon, iconSize: new L.Point(60.75) })
 
     useEffect(() => {
         fetchGnomes()
@@ -22,13 +24,18 @@ export const Gnomes = () => {
 
     if (!userLocation) return <h1>Loading...</h1>
 
-    const markers = gnomes.map(({name, coords}, index) => (
-        <Marker key={index} position={[coords.lat, coords.lng]} icon={gnomeMarker}>
-            <Popup>
-                {name}
-            </Popup>
-        </Marker>
-    ))
+    const user = JSON.parse(localStorage.getItem("auth"))
+
+    const markers = gnomes.map(({name, coords}, index) => {
+        const image = (user && user.user.achievements[name.toLowerCase()]) ? gnomeMarker : blackGnomeMarker
+        return (
+            <Marker key={index} position={[coords.lat, coords.lng]} icon={image}>
+                <Popup>
+                    {name}
+                </Popup>
+            </Marker>
+        )
+    })
 
     return (
         <MapWrapper>

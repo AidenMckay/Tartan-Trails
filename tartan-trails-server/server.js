@@ -26,9 +26,9 @@ function decrypt(text){
 }
 
 
-MongoClient.connect("mongodb://localhost:27017")
+MongoClient.connect("mongodb+srv://tartan-trails:tartan-trails@cluster0.vxj7e.mongodb.net/tartan-trails?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true })
     .then(client => {
-        const db = client.db('tartanTrails')
+        const db = client.db('tartan-trails')
         const gnomesCollection = db.collection("gnomes")
         const usersCollection = db.collection("users")
 
@@ -37,18 +37,29 @@ MongoClient.connect("mongodb://localhost:27017")
             .then(result => {
                 if(result) {
                     res.status(400)
-                    return res.json({status: 400, message: "NO!"})
+                    return res.json({status: 400, message: "That username is already taken!"})
                 }
                 usersCollection.insertOne({
                     username: req.body.username,
                     password: encrypt(req.body.password),
                     achievements: {
-                        gnome1: false,
-                        gnome2: false,
-                        gnome3: false
+                        gertrude: false,
+                        scry: false,
+                        konrad: false
                     }
                 }).then(ops => res.json(ops))
             })
+        })
+
+        app.get('/api/user/:username', (req, res) => {
+            usersCollection.findOne({username: req.params.username})
+                .then(result => {
+                    if (!result) {
+                        res.status(400)
+                        return res.json({status: 400, message: "NO!"})
+                    }
+                    res.json(result.achievements)
+                })
         })
 
         app.post('/api/gnome-collected/:collectedGnome', (req, res) => {
@@ -87,9 +98,10 @@ MongoClient.connect("mongodb://localhost:27017")
             gnomesCollection.find()
                 .toArray()
                 .then(gnomes => res.json(gnomes))
+                .catch(err => res.json(err))
         })
-    })
 
-app.listen(3001, () => {
-    console.log("Listening on port 3001.")
-})
+        app.listen(3001, () => {
+            console.log("Listening on port 3001.")
+        })
+    }).catch(console.error)

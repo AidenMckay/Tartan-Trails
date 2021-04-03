@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import UserService from '../../services/UserService';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
+import { useHistory } from "react-router-dom"
 import {
   MobileIcon,
   Nav,
@@ -13,9 +15,12 @@ import {
   NavBtn,
   NavBtnLink
 } from './NavbarElements';
+import {ButtonR} from '../ButtonElement'
+import {BtnWrap} from '../InfoSection/InfoElements'
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
+  const history = useHistory()
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -32,6 +37,30 @@ const Navbar = ({ toggle }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
+  const signUp = (!localStorage.getItem("auth")) ? (
+    <NavItem>
+      <NavLinks
+        to='signup'
+        smooth={true}
+        duration={500}
+        spy={true}
+        exact='true'
+        offset={-80}
+      >
+        sign up
+      </NavLinks>
+    </NavItem>) : null;
+
+    const signInOut = (!localStorage.getItem("auth")) ? (<NavBtnLink to='/Signin'>Sign in</NavBtnLink>) : (<BtnWrap>
+      <ButtonR
+        primary={true}
+        dark={true}
+        onClick={() => {UserService.logOut();history.push("/")}}
+        >
+        Sign Out
+      </ButtonR>
+    </BtnWrap>)
 
   return (
     <>
@@ -81,21 +110,10 @@ const Navbar = ({ toggle }) => {
                   services
                 </NavLinks>
               </NavItem>
-              <NavItem>
-                <NavLinks
-                  to='signup'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                >
-                  sign up
-                </NavLinks>
-              </NavItem>
+              {signUp}
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to='/Signin'>Sign in</NavBtnLink>
+              {signInOut}
             </NavBtn>
           </NavbarContainer>
         </Nav>

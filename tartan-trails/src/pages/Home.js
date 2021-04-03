@@ -17,6 +17,9 @@ function Home() {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  const joinToday = (localStorage.getItem("auth")) ? null : <InfoSection {...homeObjThree} />
+
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
@@ -25,7 +28,7 @@ function Home() {
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
       <Services />
-      <InfoSection {...homeObjThree} />
+      {joinToday}
       <Footer />
     </>
   );

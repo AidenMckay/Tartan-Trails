@@ -28,7 +28,8 @@ const InfoSection = ({
   id,
   primary,
   darkText,
-  path
+  path,
+  darkSubtitle
 }) => {
   console.log(primary);
   return (
@@ -40,7 +41,7 @@ const InfoSection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline.toLowerCase()}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <Subtitle darkSubtitle={darkSubtitle} darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
                   <ButtonR
                     primary={primary}
